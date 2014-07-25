@@ -11,6 +11,17 @@
   Render times are taken from a 2008 Wolfdale Core2Duo unless specified otherwise. Newer CPUs (obviously) perform much better.
 
   <div class="exhibit">
+    <a href="./i/box-8-512.png">
+      <img src="./i/box-8-512.png">
+    </a>
+
+    <div class="specs">
+      <div class="caption">Test scene (8 shadow samples), 512px&times;512px</div>
+      <div class="render-specs">render time: 13s, primitives: 9, reflects: 4, refracts: 6, shadow samples: 8, supersampling: 2&times;2, lights: 1</div>
+    </div>
+  </div>
+
+  <div class="exhibit">
     <a href="./i/box-32-512.png">
       <img src="./i/box-32-512.png">
     </a>
@@ -22,7 +33,7 @@
   </div>
 
   <div class="exhibit">
-    <a href="./i/box-62-512.png">
+    <a href="./i/box-64-512.png">
       <img src="./i/box-64-512.png">
     </a>
 
@@ -40,6 +51,61 @@
     <div class="specs">
       <div class="caption">Test scene (64 shadow samples), 1024px&times;1024px</div>
       <div class="render-specs">render time: 358s, primitives: 9, reflects: 4, refracts: 6, shadow samples: 64, supersampling: 2&times;2, lights: 1</div>
+    </div>
+  </div>
+
+  <div class="exhibit">
+    <a href="./i/box-64-wide.png">
+      <img src="./i/box-64-wide.png">
+    </a>
+
+    <div class="specs">
+      <div class="caption">Test scene (wide, 64 shadow samples), 1024px&times;512px</div>
+      <div class="render-specs">render time: 222s, primitives: 9, reflects: 4, refracts: 6, shadow samples: 64, supersampling: 2&times;2, lights: 1</div>
+    </div>
+  </div>
+
+  <div class="exhibit">
+    <a href="./i/checkertest-512.png">
+      <img src="./i/checkertest-512.png">
+    </a>
+
+    <div class="specs">
+      <div class="caption">Checkerboard texture test, 512px&times;512px</div>
+      <div class="render-specs"></div>
+    </div>
+  </div>
+
+  <div class="exhibit">
+    <a href="./i/uvtest-512.png">
+      <img src="./i/uvtest-512.png">
+    </a>
+
+    <div class="specs">
+      <div class="caption">UV parameterisation test, 512px&times;512px</div>
+      <div class="render-specs">u: red channel, v: green channel</div>
+    </div>
+  </div>
+
+  <div class="exhibit">
+    <a href="./i/imagetextest-512.png">
+      <img src="./i/imagetextest-512.png">
+    </a>
+
+    <div class="specs">
+      <div class="caption">Image texture test, 512px&times;512px</div>
+      <div class="render-specs">Plane parameterisation did not work well for image textures since ImageTexture was still missing a scale parameter.</div>
+    </div>
+  </div>
+
+  <div class="exhibit">
+    <a href="./i/skybox-64-1024.png">
+      <img src="./i/skybox-64-1024.png">
+    </a>
+
+    <div class="specs">
+      <div class="caption">Skybox test, 1024px&times;1024px</div>
+      <div class="render-specs">This scene was used to check for proper stitching and orientation of the skybox cube map. The entire scene (nearly) can be seen with just a reflective sphere!</div>
     </div>
   </div>
 
