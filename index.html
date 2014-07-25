@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+  <title>rust-raytracer Image Gallery</title>
+  <link rel="stylesheet" type="text/css" href="gallery.css">
+  <script src="gallery.js"></script>
+</head>
+<body>
+  <h1><a href="https://github.com/gyng/rust-raytracer">rust-raytracer</a> image gallery</h1>
+
+  Render times are taken from a 2008 Wolfdale Core2Duo unless specified otherwise. Newer CPUs (obviously) perform much better.
+
+  <div class="exhibit">
+    <a href="./i/box-32-512.png">
+      <img src="./i/box-32-512.png">
+    </a>
+
+    <div class="specs">
+      <div class="caption">Test scene (32 shadow samples), 512px&times;512px</div>
+      <div class="render-specs">render time: 44s, primitives: 9, reflects: 4, refracts: 6, shadow samples: 32, supersampling: 2&times;2, lights: 1</div>
+    </div>
+  </div>
+
+  <div class="exhibit">
+    <a href="./i/box-62-512.png">
+      <img src="./i/box-64-512.png">
+    </a>
+
+    <div class="specs">
+      <div class="caption">Test scene (64 shadow samples), 512px&times;512px</div>
+      <div class="render-specs">render time: 88s, primitives: 9, reflects: 4, refracts: 6, shadow samples: 64, supersampling: 2&times;2, lights: 1</div>
+    </div>
+  </div>
+
+  <div class="exhibit">
+    <a href="./i/box-64-1024.png">
+      <img src="./i/box-64-1024.png">
+    </a>
+
+    <div class="specs">
+      <div class="caption">Test scene (64 shadow samples), 1024px&times;1024px</div>
+      <div class="render-specs">render time: 358s, primitives: 9, reflects: 4, refracts: 6, shadow samples: 64, supersampling: 2&times;2, lights: 1</div>
+    </div>
+  </div>
+
+  <div class="exhibit">
+    <a href="./i/box-32-512.png">
+      <img src="./i/bunny-32-512.png">
+    </a>
+
+    <div class="specs">
+      <div class="caption">Bunny with spheres, 512px&times;512px</div>
+      <div class="render-specs">render time: 2019s, triangles: &approx;300, reflects: 4, refracts: 6, shadow samples: 32, supersampling: 2&times;2, lights: 2</div>
+    </div>
+  </div>
+
+  <div class="exhibit">
+    <a href="./i/bunny-2048.png">
+      <img src="./i/bunny-2048.png">
+    </a>
+
+    <div class="specs">
+      <div class="caption">Bunny with spheres, no skybox, 2048px&times;2048px</div>
+      <div class="render-specs">Triangles: &approx;300</div>
+    </div>
+  </div>
+
+  <div class="exhibit">
+    <a href="./i/teapot-32-512.png">
+      <img src="./i/teapot-32-512.png">
+    </a>
+
+    <div class="specs">
+      <div class="caption">Teapot, 512px&times;512px</div>
+      <div class="render-specs">render time: 1073s, triangles: &approx;2500, reflects: 4, refracts: 6, shadow samples: 32, supersampling: 2&times;2, lights: 1</div>
+    </div>
+  </div>
+
+  <div class="exhibit">
+    <a href="./i/cow-16-512.png">
+      <img src="./i/cow-16-512.png">
+    </a>
+
+    <div class="specs">
+      <div class="caption">Cow (16 shadow samples), 512px&times;512px</div>
+      <div class="render-specs">render time: 1155s, triangles: &approx;5000, reflects: 4, refracts: 6, shadow samples: 16, supersampling: 2&times;2, lights: 1</div>
+    </div>
+  </div>
+
+  <div class="exhibit">
+    <a href="./i/cow-32-512.png">
+      <img src="./i/cow-32-512.png">
+    </a>
+
+    <div class="specs">
+      <div class="caption">Cow (32 shadow samples), 512px&times;512px</div>
+      <div class="render-specs">render time: 2183s, triangles: &approx;5000, reflects: 4, refracts: 6, shadow samples: 32, supersampling: 2&times;2, lights: 1</div>
+    </div>
+  </div>
+
+  <div class="exhibit">
+    <a href="./i/lucy-16-512.png">
+      <img src="./i/lucy-16-512.png">
+    </a>
+
+    <div class="specs">
+      <div class="caption">Lucy, 512px&times;512px</div>
+      <div class="render-specs">render time: 2123s, triangles: &approx;55K, reflects: 4, refracts: 6, shadow samples: 16, supersampling: 2&times;2, lights: 1</div>
+    </div>
+  </div>
+
+  <div class="exhibit">
+    <a href="./i/lucy-1024.png">
+      <img src="./i/lucy-1024.png">
+    </a>
+
+    <div class="specs">
+      <div class="caption">Lucy, no skybox, 1024px&times;1024px</div>
+      <div class="render-specs">triangles: &approx;55K</div>
+    </div>
+  </div>
+
+  &#10087;
+</body>
+</html>

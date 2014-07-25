@@ -1,0 +1,24 @@
+html {
+    font-size: 16px;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+.exhibit {
+    max-width: 100%;
+    padding: 2rem 0 4rem 0;
+    font-family: Georgia, serif;
+}
+
+.exhibit img {
+    max-width: calc(100% - 2rem);
+}
+
+.caption {
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.expanded {
+    max-width: none;
+}
