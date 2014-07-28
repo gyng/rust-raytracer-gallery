@@ -16,41 +16,41 @@
     </a>
 
     <div class="specs">
-      <div class="caption">Test scene (8 shadow samples), 512px&times;512px</div>
-      <div class="render-specs">render time: 13s, primitives: 9, reflects: 4, refracts: 6, shadow samples: 8, supersampling: 2&times;2, lights: 1</div>
+      <div class="caption">Test scene (8 shadow samples, no fresnel), 512px&times;512px</div>
+      <div class="render-specs">render time: 13s, primitives: 10, reflects: 4, refracts: 6, shadow samples: 8, supersampling: 2&times;2, lights: 1</div>
     </div>
   </div>
 
   <div class="exhibit">
-    <a href="./i/box-32-512.png">
-      <img src="./i/box-32-512.png">
+    <a href="./i/box-32-512-fresnel.png">
+      <img src="./i/box-32-512-fresnel.png">
     </a>
 
     <div class="specs">
-      <div class="caption">Test scene (32 shadow samples), 512px&times;512px</div>
-      <div class="render-specs">render time: 44s, primitives: 9, reflects: 4, refracts: 6, shadow samples: 32, supersampling: 2&times;2, lights: 1</div>
+      <div class="caption">Test scene (32 shadow samples, fresnel), 512px&times;512px</div>
+      <div class="render-specs">render time: 86s, primitives: 10, reflects: 4, refracts: 6, shadow samples: 32, supersampling: 2&times;2, lights: 1</div>
     </div>
   </div>
 
   <div class="exhibit">
-    <a href="./i/box-64-512.png">
-      <img src="./i/box-64-512.png">
+    <a href="./i/box-64-512-fresnel.png">
+      <img src="./i/box-64-512-fresnel.png">
     </a>
 
     <div class="specs">
-      <div class="caption">Test scene (64 shadow samples), 512px&times;512px</div>
-      <div class="render-specs">render time: 88s, primitives: 9, reflects: 4, refracts: 6, shadow samples: 64, supersampling: 2&times;2, lights: 1</div>
+      <div class="caption">Test scene (64 shadow samples, fresnel), 512px&times;512px</div>
+      <div class="render-specs">render time: 188s, primitives: 10, reflects: 4, refracts: 6, shadow samples: 64, supersampling: 2&times;2, lights: 1</div>
     </div>
   </div>
 
   <div class="exhibit">
-    <a href="./i/box-64-1024.png">
-      <img src="./i/box-64-1024.png">
+    <a href="./i/box-64-1024-fresnel.png">
+      <img src="./i/box-64-1024-fresnel.png">
     </a>
 
     <div class="specs">
-      <div class="caption">Test scene (64 shadow samples), 1024px&times;1024px</div>
-      <div class="render-specs">render time: 358s, primitives: 9, reflects: 4, refracts: 6, shadow samples: 64, supersampling: 2&times;2, lights: 1</div>
+      <div class="caption">Test scene (64 shadow samples, fresnel), 1024px&times;1024px</div>
+      <div class="render-specs">render time: 696s, primitives: 10, reflects: 4, refracts: 6, shadow samples: 64, supersampling: 2&times;2, lights: 1</div>
     </div>
   </div>
 
@@ -61,7 +61,7 @@
 
     <div class="specs">
       <div class="caption">Test scene (wide, 64 shadow samples), 1024px&times;512px</div>
-      <div class="render-specs">render time: 222s, primitives: 9, reflects: 4, refracts: 6, shadow samples: 64, supersampling: 2&times;2, lights: 1</div>
+      <div class="render-specs">render time: 222s, primitives: 10, reflects: 4, refracts: 6, shadow samples: 64, supersampling: 2&times;2, lights: 1</div>
     </div>
   </div>
 
@@ -110,6 +110,31 @@
   </div>
 
   <div class="exhibit">
+    <a href="./i/fresnel-1-512.png">
+      <img src="./i/fresnel-1-512.png">
+    </a>
+
+    <a href="./i/fresnel-50-512.png">
+      <img src="./i/fresnel-50-512.png">
+    </a>
+
+    <br>
+
+    <a href="./i/fresnel-100-512.png">
+      <img src="./i/fresnel-100-512.png">
+    </a>
+
+    <a href="./i/fresnel-200-512.png">
+      <img src="./i/fresnel-200-512.png">
+    </a>
+
+    <div class="specs">
+      <div class="caption">Fresnel test, 4&times;512px&times;512px</div>
+      <div class="render-specs">This scene was used to test the fresnel implementation. The reflection in the floor fades as the camera tilts down.</div>
+    </div>
+  </div>
+
+  <div class="exhibit">
     <a href="./i/bunny-32-512.png">
       <img src="./i/bunny-32-512.png">
     </a>
@@ -143,13 +168,13 @@
   </div>
 
   <div class="exhibit">
-    <a href="./i/cow-16-512.png">
-      <img src="./i/cow-16-512.png">
+    <a href="./i/teapot-512-white.png">
+      <img src="./i/teapot-512-white.png">
     </a>
 
     <div class="specs">
-      <div class="caption">Cow (16 shadow samples), 512px&times;512px</div>
-      <div class="render-specs">render time: 1155s, triangles: &approx;5000, reflects: 4, refracts: 6, shadow samples: 16, supersampling: 2&times;2, lights: 1</div>
+      <div class="caption">Teapot (white), 512px&times;512px</div>
+      <div class="render-specs">Note the higher reflectivity at the edges (grazing angles) and the obvious blocky shadows caused by the lower polygon model. Shading is still smooth due to the interpolation of normals.</div>
     </div>
   </div>
 
@@ -159,8 +184,19 @@
     </a>
 
     <div class="specs">
-      <div class="caption">Cow (32 shadow samples), 512px&times;512px</div>
+      <div class="caption">Cow, 512px&times;512px</div>
       <div class="render-specs">render time: 2183s, triangles: &approx;5000, reflects: 4, refracts: 6, shadow samples: 32, supersampling: 2&times;2, lights: 1</div>
+    </div>
+  </div>
+
+  <div class="exhibit">
+    <a href="./i/cow-broken.png">
+      <img src="./i/cow-broken.png">
+    </a>
+
+    <div class="specs">
+      <div class="caption">Cow (broken), 512px&times;512px</div>
+      <div class="render-specs">This happened because triangles which intersected multiple octree nodes were only added to one node.</div>
     </div>
   </div>
 
@@ -183,6 +219,39 @@
     <div class="specs">
       <div class="caption">Lucy, no skybox, 1024px&times;1024px</div>
       <div class="render-specs">triangles: &approx;55K</div>
+    </div>
+  </div>
+
+  <div class="exhibit">
+    <a href="./i/lucy-storm-3072.png">
+      <img src="./i/lucy-storm-3072.png">
+    </a>
+
+    <div class="specs">
+      <div class="caption">Lucy, 3072px&times;3072px</div>
+      <div class="render-specs">Note that the background (skybox) image is blurred and not blocky thanks to the bilinear filtering of image textures. This skybox face has a texture resolution of 1024px&times;1024px.</div>
+    </div>
+  </div>
+
+  <div class="exhibit">
+    <a href="./i/sponza-512.png">
+      <img src="./i/sponza-512.png">
+    </a>
+
+    <div class="specs">
+      <div class="caption">Sponza, 512px&times;512px</div>
+      <div class="render-specs">triangles: &approx;27K, 2 lights</div>
+    </div>
+  </div>
+
+  <div class="exhibit">
+    <a href="./i/sibenik-8-512.png">
+      <img src="./i/sibenik-8-512.png">
+    </a>
+
+    <div class="specs">
+      <div class="caption">Sibenik, 512px&times;512px</div>
+      <div class="render-specs">render time: 6567s, triangles: &approx;70K, shadow samples: 8, supersampling: 2&times;2, 3 lights</div>
     </div>
   </div>
 
