@@ -8,7 +8,7 @@
 <body>
   <h1><a href="https://github.com/gyng/rust-raytracer">rust-raytracer</a> image gallery</h1>
 
-  Render times are taken from a 2008 Wolfdale Core2Duo unless specified otherwise. Newer CPUs (obviously) perform much better.
+  Render times are taken from a 2008 Wolfdale Core2Duo @ 3.15GHz unless specified otherwise. Newer CPUs (obviously) perform much better.
 
   <div class="exhibit">
     <a href="./i/box-8-512.png">
@@ -110,27 +110,20 @@
   </div>
 
   <div class="exhibit">
-    <a href="./i/fresnel-1-512.png">
-      <img src="./i/fresnel-1-512.png">
-    </a>
-
-    <a href="./i/fresnel-50-512.png">
-      <img src="./i/fresnel-50-512.png">
-    </a>
-
-    <br>
-
-    <a href="./i/fresnel-100-512.png">
-      <img src="./i/fresnel-100-512.png">
-    </a>
-
-    <a href="./i/fresnel-200-512.png">
-      <img src="./i/fresnel-200-512.png">
-    </a>
+    <video src="./i/skybox-512-anim.webm" autoplay loop></video>
 
     <div class="specs">
-      <div class="caption">Fresnel test, 4&times;512px&times;512px</div>
-      <div class="render-specs">This scene was used to test the fresnel implementation. The reflection in the floor fades as the camera tilts down.</div>
+      <div class="caption">Skybox animation test, 512px&times;512px, 250 frames, 25fps</div>
+      <div class="render-specs">render time: 796s</div>
+    </div>
+  </div>
+
+  <div class="exhibit">
+    <video src="./i/fresnel-test.webm" autoplay loop></video>
+
+    <div class="specs">
+      <div class="caption">Fresnel test, 852px&times;480px, 250 frames, 25fps</div>
+      <div class="render-specs">render time: 1840s (2014 i7 4970k @ 4.12GHz). This scene was used to test the fresnel implementation. The reflection in the floor fades as the camera tilts down.</div>
     </div>
   </div>
 
@@ -141,7 +134,7 @@
 
     <div class="specs">
       <div class="caption">Bunny with spheres, 512px&times;512px</div>
-      <div class="render-specs">render time: 2019s, triangles: &approx;300, reflects: 4, refracts: 6, shadow samples: 32, supersampling: 2&times;2, lights: 2</div>
+      <div class="render-specs">render time: 1559s, triangles: &approx;300, reflects: 4, refracts: 6, shadow samples: 32, supersampling: 2&times;2, lights: 2</div>
     </div>
   </div>
 
@@ -163,7 +156,7 @@
 
     <div class="specs">
       <div class="caption">Teapot, 512px&times;512px</div>
-      <div class="render-specs">render time: 1073s, triangles: &approx;2500, reflects: 4, refracts: 6, shadow samples: 32, supersampling: 2&times;2, lights: 1</div>
+      <div class="render-specs">render time: 472s, triangles: &approx;2500, reflects: 4, refracts: 6, shadow samples: 32, supersampling: 2&times;2, lights: 1</div>
     </div>
   </div>
 
@@ -185,7 +178,7 @@
 
     <div class="specs">
       <div class="caption">Cow, 512px&times;512px</div>
-      <div class="render-specs">render time: 2183s, triangles: &approx;5000, reflects: 4, refracts: 6, shadow samples: 32, supersampling: 2&times;2, lights: 1</div>
+      <div class="render-specs">render time: 941s, triangles: &approx;5000, reflects: 4, refracts: 6, shadow samples: 32, supersampling: 2&times;2, lights: 1</div>
     </div>
   </div>
 
@@ -207,7 +200,7 @@
 
     <div class="specs">
       <div class="caption">Lucy, 512px&times;512px</div>
-      <div class="render-specs">render time: 2123s, triangles: &approx;55K, reflects: 4, refracts: 6, shadow samples: 16, supersampling: 2&times;2, lights: 1</div>
+      <div class="render-specs">render time: 814s, triangles: &approx;55K, reflects: 4, refracts: 6, shadow samples: 16, supersampling: 2&times;2, lights: 1</div>
     </div>
   </div>
 
@@ -251,7 +244,7 @@
 
     <div class="specs">
       <div class="caption">Sibenik, 512px&times;512px</div>
-      <div class="render-specs">render time: 6567s, triangles: &approx;70K, shadow samples: 8, supersampling: 2&times;2, 3 lights</div>
+      <div class="render-specs">render time: 1855s (Wolfdale @ 3.15GHz), 344s (2014 i7 4970k @ 4.12GHz), triangles: &approx;70K, shadow samples: 8, supersampling: 2&times;2, 3 lights</div>
     </div>
   </div>
 
