@@ -4,6 +4,17 @@ html {
     font-family: Arial, sans-serif;
 }
 
+.anchor {
+    color: #888;
+    text-decoration: none;
+    line-height: 3rem;
+}
+
+.anchor:hover {
+    color: #222;
+    text-decoration: underline;
+}
+
 .exhibit {
     max-width: 100%;
     padding: 2rem 0 4rem 0;
@@ -14,11 +25,8 @@ html {
     max-width: calc(100% - 2rem);
 }
 
-.caption {
+.exhibit-title {
     font-variant: small-caps;
     font-weight: bold;
 }
 
-.expanded {
-    max-width: none;
-}
