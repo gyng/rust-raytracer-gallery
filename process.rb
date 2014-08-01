@@ -7,25 +7,29 @@ exhibits = JSON.parse(File.read('./exhibits.json'), symbolize_names: true)
 
 exhibit_template_image = '
 
-  <div class="exhibit">
-    <a class="anchor" href="#{{anchor}}" id="{{anchor}}" title="Link">&sect;</a><br>
+  <div class="exhibit" id="{{anchor}}">
     <a href="{{src}}">
       <img src="{{src}}">
     </a>
 
-    <div class="specs">
-      <div class="exhibit-title">{{title}}</div>
+    <div class="exhibit-details">
+      <div class="exhibit-title">
+        {{title}}
+        <a class="anchor" href="#{{anchor}}" id="{{anchor}}" title="Link">&sect;</a>
+      </div>
       <div class="exhibit-caption">{{caption}}</div>
     </div>
   </div>'
 
 exhibit_template_video = '
   <div class="exhibit" id={{anchor}}>
-    <a class="anchor" href="#{{anchor}}" id="{{anchor}}" title="Link">&sect;</a><br>
     <video src="{{src}}" autoplay loop></video>
 
-    <div class="specs">
-      <div class="exhibit-title">{{title}}</div>
+    <div class="exhibit-details">
+      <div class="exhibit-title">
+        {{title}}
+        <a class="anchor" href="#{{anchor}}" id="{{anchor}}" title="Link">&sect;</a><br>
+      </div>
       <div class="exhibit-caption">{{caption}}</div>
     </div>
   </div>'

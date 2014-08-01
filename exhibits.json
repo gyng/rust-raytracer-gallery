@@ -49,6 +49,12 @@
   },
   {
     "type": "image",
+    "src": "gi-test.png",
+    "title": "Global illunimation test (WIP)",
+    "caption": "Note the focusing of light and colour bleed on objects. It's blocky because it uses a cube to query cached photons instead of (rightly) using k-nearest neighbours. As a side effect of this, the irradiance is also guesstimated, which is why the image brightness doesn't look right at all."
+  },
+  {
+    "type": "image",
     "src": "skybox-64-1024.png",
     "title": "Skybox test, 1024px&times;1024px",
     "caption": "This scene was used to check for proper stitching and orientation of the skybox cube map. The entire scene (nearly) can be seen with just a reflective sphere!"
@@ -130,5 +136,29 @@
     "src": "sibenik-8-512.png",
     "title": "Sibenik, 512px&times;512px",
     "caption": "render time: 1855s (Wolfdale @ 3.15GHz), 344s (2014 i7 4790K @ 4.12GHz), triangles: &approx;70K, shadow samples: 8, supersampling: 2&times;2, 3 lights"
+  },
+  {
+    "type": "video",
+    "src": "sibenik-240p.webm",
+    "title": "Sibenik, 427px&times;240px, 175 frames, 25fps",
+    "caption": "render time: around 8 hours, shadow samples: 8, no supersampling"
+  },
+  {
+    "type": "image",
+    "src": "heptoroid-white-64-512.png",
+    "title": "Heptoroid (white)",
+    "caption": "render time: 3179s, shadow samples: 64, supersampling: 2&times;2, lights: 1"
+  },
+  {
+    "type": "image",
+    "src": "heptoroid-shiny-64-512.png",
+    "title": "Heptoroid (shiny)",
+    "caption": "render time: 2742s. The refract version was too slow; I didn't dare render it."
+  },
+  {
+    "type": "image",
+    "src": "tachikoma-64-512.png",
+    "title": "Tachikoma",
+    "caption": "render time: 3748s, shadow samples: 64, supersampling: 2&times;2, lights: 1"
   }
 ]
