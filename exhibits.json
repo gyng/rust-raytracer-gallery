@@ -157,6 +157,24 @@
   },
   {
     "type": "image",
+    "src": "heptoroid-refractive-ior1.0-512.png",
+    "title": "Heptoroid (refractive)",
+    "caption": "At an IOR of 1.0, with only the refractive contribution (no reflections). I can't tell if this looks correct."
+  },
+  {
+    "type": "image",
+    "src": "heptoroid-refractive-32-512.png",
+    "title": "Heptoroid (refractive)",
+    "caption": "render time: 30107s, reflect levels: 3, refract levels: 16, shadow samples: 32, supersampling: 2&times;2. At a refractive index of 1.5 (glass). Upping from 2 to 3 reflect levels killed the render time."
+  },
+  {
+    "type": "image",
+    "src": "heptoroid-refractive-ior2.7-512.png",
+    "title": "Heptoroid (refractive)",
+    "caption": "At an IOR of 2.7."
+  },
+  {
+    "type": "image",
     "src": "tachikoma-64-512.png",
     "title": "Tachikoma",
     "caption": "render time: 3748s, shadow samples: 64, supersampling: 2&times;2, lights: 1"
