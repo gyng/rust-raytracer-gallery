@@ -125,6 +125,20 @@
   </div>
 
   <div class="exhibit" id="exhibit-8">
+    <a href="./i/box-gloss.png">
+      <img src="./i/box-gloss.png">
+    </a>
+
+    <div class="exhibit-details">
+      <div class="exhibit-title">
+        Glossy reflections
+        <a class="anchor" href="#exhibit-8" id="exhibit-8" title="Link">&sect;</a>
+      </div>
+      <div class="exhibit-caption">Glossy reflections on the shiny sphere.</div>
+    </div>
+  </div>
+
+  <div class="exhibit" id="exhibit-9">
     <a href="./i/gi-test.png">
       <img src="./i/gi-test.png">
     </a>
@@ -132,13 +146,13 @@
     <div class="exhibit-details">
       <div class="exhibit-title">
         Global illunimation test (WIP)
-        <a class="anchor" href="#exhibit-8" id="exhibit-8" title="Link">&sect;</a>
+        <a class="anchor" href="#exhibit-9" id="exhibit-9" title="Link">&sect;</a>
       </div>
       <div class="exhibit-caption">Note the focusing of light and colour bleed on objects. It's blocky because it uses a cube to query cached photons instead of (rightly) using k-nearest neighbours. As a side effect of this, the irradiance is also guesstimated, which is why the image brightness doesn't look right at all.</div>
     </div>
   </div>
 
-  <div class="exhibit" id="exhibit-9">
+  <div class="exhibit" id="exhibit-10">
     <a href="./i/skybox-64-1024.png">
       <img src="./i/skybox-64-1024.png">
     </a>
@@ -146,35 +160,35 @@
     <div class="exhibit-details">
       <div class="exhibit-title">
         Skybox test, 1024px&times;1024px
-        <a class="anchor" href="#exhibit-9" id="exhibit-9" title="Link">&sect;</a>
+        <a class="anchor" href="#exhibit-10" id="exhibit-10" title="Link">&sect;</a>
       </div>
       <div class="exhibit-caption">This scene was used to check for proper stitching and orientation of the skybox cube map. The entire scene (nearly) can be seen with just a reflective sphere!</div>
     </div>
   </div>
-  <div class="exhibit" id=exhibit-10>
+  <div class="exhibit" id=exhibit-11>
     <video src="./i/skybox-512-anim.webm" autoplay loop></video>
 
     <div class="exhibit-details">
       <div class="exhibit-title">
         Skybox animation test, 512px&times;512px, 250 frames, 25fps
-        <a class="anchor" href="#exhibit-10" id="exhibit-10" title="Link">&sect;</a><br>
+        <a class="anchor" href="#exhibit-11" id="exhibit-11" title="Link">&sect;</a><br>
       </div>
       <div class="exhibit-caption">render time: 796s</div>
     </div>
   </div>
-  <div class="exhibit" id=exhibit-11>
+  <div class="exhibit" id=exhibit-12>
     <video src="./i/fresnel-test.webm" autoplay loop></video>
 
     <div class="exhibit-details">
       <div class="exhibit-title">
         Fresnel test, 852px&times;480px, 250 frames, 25fps
-        <a class="anchor" href="#exhibit-11" id="exhibit-11" title="Link">&sect;</a><br>
+        <a class="anchor" href="#exhibit-12" id="exhibit-12" title="Link">&sect;</a><br>
       </div>
       <div class="exhibit-caption">render time: 1840s (2014 i7 4790K @ 4.12GHz). This scene was used to test the fresnel implementation. The reflection in the floor fades as the camera tilts down.</div>
     </div>
   </div>
 
-  <div class="exhibit" id="exhibit-12">
+  <div class="exhibit" id="exhibit-13">
     <a href="./i/bunny-32-512.png">
       <img src="./i/bunny-32-512.png">
     </a>
@@ -182,13 +196,13 @@
     <div class="exhibit-details">
       <div class="exhibit-title">
         Bunny with spheres, 512px&times;512px
-        <a class="anchor" href="#exhibit-12" id="exhibit-12" title="Link">&sect;</a>
+        <a class="anchor" href="#exhibit-13" id="exhibit-13" title="Link">&sect;</a>
       </div>
       <div class="exhibit-caption">render time: 1559s, triangles: &approx;300, reflects: 4, refracts: 6, shadow samples: 32, supersampling: 2&times;2, lights: 2</div>
     </div>
   </div>
 
-  <div class="exhibit" id="exhibit-13">
+  <div class="exhibit" id="exhibit-14">
     <a href="./i/bunny-2048.png">
       <img src="./i/bunny-2048.png">
     </a>
@@ -196,13 +210,13 @@
     <div class="exhibit-details">
       <div class="exhibit-title">
         Bunny with spheres, no skybox, 2048px&times;2048px
-        <a class="anchor" href="#exhibit-13" id="exhibit-13" title="Link">&sect;</a>
+        <a class="anchor" href="#exhibit-14" id="exhibit-14" title="Link">&sect;</a>
       </div>
       <div class="exhibit-caption">Triangles: &approx;300</div>
     </div>
   </div>
 
-  <div class="exhibit" id="exhibit-14">
+  <div class="exhibit" id="exhibit-15">
     <a href="./i/teapot-32-512.png">
       <img src="./i/teapot-32-512.png">
     </a>
@@ -210,13 +224,13 @@
     <div class="exhibit-details">
       <div class="exhibit-title">
         Teapot, 512px&times;512px
-        <a class="anchor" href="#exhibit-14" id="exhibit-14" title="Link">&sect;</a>
+        <a class="anchor" href="#exhibit-15" id="exhibit-15" title="Link">&sect;</a>
       </div>
       <div class="exhibit-caption">render time: 472s, triangles: &approx;2500, reflects: 4, refracts: 6, shadow samples: 32, supersampling: 2&times;2, lights: 1</div>
     </div>
   </div>
 
-  <div class="exhibit" id="exhibit-15">
+  <div class="exhibit" id="exhibit-16">
     <a href="./i/teapot-512-white.png">
       <img src="./i/teapot-512-white.png">
     </a>
@@ -224,13 +238,13 @@
     <div class="exhibit-details">
       <div class="exhibit-title">
         Teapot (white), 512px&times;512px
-        <a class="anchor" href="#exhibit-15" id="exhibit-15" title="Link">&sect;</a>
+        <a class="anchor" href="#exhibit-16" id="exhibit-16" title="Link">&sect;</a>
       </div>
       <div class="exhibit-caption">Note the higher reflectivity at the edges (grazing angles) and the obvious blocky shadows caused by the lower polygon model. Shading is still smooth due to the interpolation of normals.</div>
     </div>
   </div>
 
-  <div class="exhibit" id="exhibit-16">
+  <div class="exhibit" id="exhibit-17">
     <a href="./i/cow-32-512.png">
       <img src="./i/cow-32-512.png">
     </a>
@@ -238,13 +252,13 @@
     <div class="exhibit-details">
       <div class="exhibit-title">
         Cow, 512px&times;512px
-        <a class="anchor" href="#exhibit-16" id="exhibit-16" title="Link">&sect;</a>
+        <a class="anchor" href="#exhibit-17" id="exhibit-17" title="Link">&sect;</a>
       </div>
       <div class="exhibit-caption">render time: 941s, triangles: &approx;5000, reflects: 4, refracts: 6, shadow samples: 32, supersampling: 2&times;2, lights: 1</div>
     </div>
   </div>
 
-  <div class="exhibit" id="exhibit-17">
+  <div class="exhibit" id="exhibit-18">
     <a href="./i/cow-broken.png">
       <img src="./i/cow-broken.png">
     </a>
@@ -252,13 +266,13 @@
     <div class="exhibit-details">
       <div class="exhibit-title">
         Cow (broken), 512px&times;512px
-        <a class="anchor" href="#exhibit-17" id="exhibit-17" title="Link">&sect;</a>
+        <a class="anchor" href="#exhibit-18" id="exhibit-18" title="Link">&sect;</a>
       </div>
       <div class="exhibit-caption">This happened because triangles which intersected multiple octree nodes were only added to one node.</div>
     </div>
   </div>
 
-  <div class="exhibit" id="exhibit-18">
+  <div class="exhibit" id="exhibit-19">
     <a href="./i/lucy-16-512.png">
       <img src="./i/lucy-16-512.png">
     </a>
@@ -266,13 +280,13 @@
     <div class="exhibit-details">
       <div class="exhibit-title">
         Lucy, 512px&times;512px
-        <a class="anchor" href="#exhibit-18" id="exhibit-18" title="Link">&sect;</a>
+        <a class="anchor" href="#exhibit-19" id="exhibit-19" title="Link">&sect;</a>
       </div>
       <div class="exhibit-caption">render time: 814s, triangles: &approx;55K, reflects: 4, refracts: 6, shadow samples: 16, supersampling: 2&times;2, lights: 1</div>
     </div>
   </div>
 
-  <div class="exhibit" id="exhibit-19">
+  <div class="exhibit" id="exhibit-20">
     <a href="./i/lucy-1024.png">
       <img src="./i/lucy-1024.png">
     </a>
@@ -280,13 +294,13 @@
     <div class="exhibit-details">
       <div class="exhibit-title">
         Lucy, no skybox, 1024px&times;1024px
-        <a class="anchor" href="#exhibit-19" id="exhibit-19" title="Link">&sect;</a>
+        <a class="anchor" href="#exhibit-20" id="exhibit-20" title="Link">&sect;</a>
       </div>
       <div class="exhibit-caption">triangles: &approx;55K</div>
     </div>
   </div>
 
-  <div class="exhibit" id="exhibit-20">
+  <div class="exhibit" id="exhibit-21">
     <a href="./i/lucy-storm-3072.png">
       <img src="./i/lucy-storm-3072.png">
     </a>
@@ -294,13 +308,13 @@
     <div class="exhibit-details">
       <div class="exhibit-title">
         Lucy, 3072px&times;3072px
-        <a class="anchor" href="#exhibit-20" id="exhibit-20" title="Link">&sect;</a>
+        <a class="anchor" href="#exhibit-21" id="exhibit-21" title="Link">&sect;</a>
       </div>
       <div class="exhibit-caption">Note that the background (skybox) image is blurred and not blocky thanks to the bilinear filtering of image textures. This skybox face has a texture resolution of 1024px&times;1024px.</div>
     </div>
   </div>
 
-  <div class="exhibit" id="exhibit-21">
+  <div class="exhibit" id="exhibit-22">
     <a href="./i/sponza-512.png">
       <img src="./i/sponza-512.png">
     </a>
@@ -308,13 +322,13 @@
     <div class="exhibit-details">
       <div class="exhibit-title">
         Sponza, 512px&times;512px
-        <a class="anchor" href="#exhibit-21" id="exhibit-21" title="Link">&sect;</a>
+        <a class="anchor" href="#exhibit-22" id="exhibit-22" title="Link">&sect;</a>
       </div>
       <div class="exhibit-caption">triangles: &approx;27K, 2 lights</div>
     </div>
   </div>
 
-  <div class="exhibit" id="exhibit-22">
+  <div class="exhibit" id="exhibit-23">
     <a href="./i/sibenik-8-512.png">
       <img src="./i/sibenik-8-512.png">
     </a>
@@ -322,24 +336,24 @@
     <div class="exhibit-details">
       <div class="exhibit-title">
         Sibenik, 512px&times;512px
-        <a class="anchor" href="#exhibit-22" id="exhibit-22" title="Link">&sect;</a>
+        <a class="anchor" href="#exhibit-23" id="exhibit-23" title="Link">&sect;</a>
       </div>
       <div class="exhibit-caption">render time: 1855s (Wolfdale @ 3.15GHz), 344s (2014 i7 4790K @ 4.12GHz), triangles: &approx;70K, shadow samples: 8, supersampling: 2&times;2, 3 lights</div>
     </div>
   </div>
-  <div class="exhibit" id=exhibit-23>
+  <div class="exhibit" id=exhibit-24>
     <video src="./i/sibenik-240p.webm" autoplay loop></video>
 
     <div class="exhibit-details">
       <div class="exhibit-title">
         Sibenik, 427px&times;240px, 175 frames, 25fps
-        <a class="anchor" href="#exhibit-23" id="exhibit-23" title="Link">&sect;</a><br>
+        <a class="anchor" href="#exhibit-24" id="exhibit-24" title="Link">&sect;</a><br>
       </div>
       <div class="exhibit-caption">render time: around 8 hours, shadow samples: 8, no supersampling</div>
     </div>
   </div>
 
-  <div class="exhibit" id="exhibit-24">
+  <div class="exhibit" id="exhibit-25">
     <a href="./i/heptoroid-white-64-512.png">
       <img src="./i/heptoroid-white-64-512.png">
     </a>
@@ -347,13 +361,13 @@
     <div class="exhibit-details">
       <div class="exhibit-title">
         Heptoroid (white)
-        <a class="anchor" href="#exhibit-24" id="exhibit-24" title="Link">&sect;</a>
+        <a class="anchor" href="#exhibit-25" id="exhibit-25" title="Link">&sect;</a>
       </div>
       <div class="exhibit-caption">render time: 3179s, shadow samples: 64, supersampling: 2&times;2, lights: 1</div>
     </div>
   </div>
 
-  <div class="exhibit" id="exhibit-25">
+  <div class="exhibit" id="exhibit-26">
     <a href="./i/heptoroid-shiny-64-512.png">
       <img src="./i/heptoroid-shiny-64-512.png">
     </a>
@@ -361,13 +375,13 @@
     <div class="exhibit-details">
       <div class="exhibit-title">
         Heptoroid (shiny)
-        <a class="anchor" href="#exhibit-25" id="exhibit-25" title="Link">&sect;</a>
+        <a class="anchor" href="#exhibit-26" id="exhibit-26" title="Link">&sect;</a>
       </div>
       <div class="exhibit-caption">render time: 2742s. The refract version was too slow; I didn't dare render it.</div>
     </div>
   </div>
 
-  <div class="exhibit" id="exhibit-26">
+  <div class="exhibit" id="exhibit-27">
     <a href="./i/heptoroid-refractive-ior1.0-512.png">
       <img src="./i/heptoroid-refractive-ior1.0-512.png">
     </a>
@@ -375,13 +389,13 @@
     <div class="exhibit-details">
       <div class="exhibit-title">
         Heptoroid (refractive)
-        <a class="anchor" href="#exhibit-26" id="exhibit-26" title="Link">&sect;</a>
+        <a class="anchor" href="#exhibit-27" id="exhibit-27" title="Link">&sect;</a>
       </div>
       <div class="exhibit-caption">At an IOR of 1.0, with only the refractive contribution (no reflections). I can't tell if this looks correct.</div>
     </div>
   </div>
 
-  <div class="exhibit" id="exhibit-27">
+  <div class="exhibit" id="exhibit-28">
     <a href="./i/heptoroid-refractive-32-512.png">
       <img src="./i/heptoroid-refractive-32-512.png">
     </a>
@@ -389,13 +403,13 @@
     <div class="exhibit-details">
       <div class="exhibit-title">
         Heptoroid (refractive)
-        <a class="anchor" href="#exhibit-27" id="exhibit-27" title="Link">&sect;</a>
+        <a class="anchor" href="#exhibit-28" id="exhibit-28" title="Link">&sect;</a>
       </div>
       <div class="exhibit-caption">render time: 30107s, reflect levels: 3, refract levels: 16, shadow samples: 32, supersampling: 2&times;2. At a refractive index of 1.5 (glass). Upping from 2 to 3 reflect levels killed the render time.</div>
     </div>
   </div>
 
-  <div class="exhibit" id="exhibit-28">
+  <div class="exhibit" id="exhibit-29">
     <a href="./i/heptoroid-refractive-ior2.7-512.png">
       <img src="./i/heptoroid-refractive-ior2.7-512.png">
     </a>
@@ -403,13 +417,13 @@
     <div class="exhibit-details">
       <div class="exhibit-title">
         Heptoroid (refractive)
-        <a class="anchor" href="#exhibit-28" id="exhibit-28" title="Link">&sect;</a>
+        <a class="anchor" href="#exhibit-29" id="exhibit-29" title="Link">&sect;</a>
       </div>
       <div class="exhibit-caption">At an IOR of 2.7.</div>
     </div>
   </div>
 
-  <div class="exhibit" id="exhibit-29">
+  <div class="exhibit" id="exhibit-30">
     <a href="./i/tachikoma-64-512.png">
       <img src="./i/tachikoma-64-512.png">
     </a>
@@ -417,7 +431,7 @@
     <div class="exhibit-details">
       <div class="exhibit-title">
         Tachikoma
-        <a class="anchor" href="#exhibit-29" id="exhibit-29" title="Link">&sect;</a>
+        <a class="anchor" href="#exhibit-30" id="exhibit-30" title="Link">&sect;</a>
       </div>
       <div class="exhibit-caption">render time: 3748s, shadow samples: 64, supersampling: 2&times;2, lights: 1</div>
     </div>

@@ -49,6 +49,12 @@
   },
   {
     "type": "image",
+    "src": "box-gloss.png",
+    "title": "Glossy reflections",
+    "caption": "Glossy reflections on the shiny sphere."
+  },
+  {
+    "type": "image",
     "src": "gi-test.png",
     "title": "Global illunimation test (WIP)",
     "caption": "Note the focusing of light and colour bleed on objects. It's blocky because it uses a cube to query cached photons instead of (rightly) using k-nearest neighbours. As a side effect of this, the irradiance is also guesstimated, which is why the image brightness doesn't look right at all."
