@@ -180,6 +180,12 @@
     "caption": "At an IOR of 2.7."
   },
   {
+    "type": "video",
+    "src": "easing60fps.webm",
+    "title": "Easing test (60fps)",
+    "caption": "This used easing settings of \"0.0 0.05 0.1 1.0\". At 33% time in to the next keyframe the camera would have only moved 5% in distance to the next keyframe."
+  },
+  {
     "type": "image",
     "src": "tachikoma-64-512.png",
     "title": "Tachikoma",
